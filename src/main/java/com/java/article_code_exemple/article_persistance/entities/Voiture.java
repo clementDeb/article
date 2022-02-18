@@ -1,7 +1,4 @@
-package com.java.persistance.entities;
-
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+package com.java.article_code_exemple.article_persistance.entities;
 
 import javax.persistence.*;
 import java.util.*;
@@ -22,7 +19,6 @@ public class Voiture  {
 
     @OneToMany(mappedBy = "voiture", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     //@OrderColumn(name = "wheel_order")
-    //@Fetch(FetchMode.JOIN)
     private final Set<Roue> roues = new HashSet<>();
 
     @OneToMany(mappedBy = "voiture", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)

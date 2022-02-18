@@ -1,13 +1,12 @@
-package com.java.persistance;
+package com.java.article_code_exemple;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 //@EnableJpaRepositories
-public class JavaPersisanceApplication {
+public class JavaApplication {
     public static void main(String... args){
-        SpringApplication.run(JavaPersisanceApplication.class, args);
+        SpringApplication.run(JavaApplication.class, args);
     }
 }

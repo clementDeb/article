@@ -1,7 +1,5 @@
-package com.java.persistance.repositories;
+package com.java.article_code_exemple.article_persistance.repositories;
 
-import com.java.persistance.entities.Voiture;
-import com.java.persistance.entities.Roue;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.java.persistance.entities;
+package com.java.article_code_exemple.article_persistance.entities;
 
-import javax.persistence.*;
+import javax.persistence.;
 
 @Entity
 public class Roue {
