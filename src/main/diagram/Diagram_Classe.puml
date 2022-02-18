@@ -1,0 +1,42 @@
+@startuml
+left to right direction
+'https://plantuml.com/class-diagram
+
+'abstract class AbstractList
+'abstract AbstractCollection
+'interface List
+'interface Collection
+'
+'List <|-- AbstractList
+'Collection <|-- AbstractCollection
+'
+'Collection <|- List
+'AbstractCollection <|- AbstractList
+'AbstractList <|-- ArrayList
+
+class Voiture {
+Integer id
+String modele
+String couleur
+List<Roue> roues
+ajouterRoue()
+supprimerRoue()
+}
+
+class Roue {
+Integer id
+String taille
+String marque
+Voiture voiture
+}
+
+class Siege {
+Integer id
+String couleur
+Voiture voiture
+}
+
+Roue *-- Voiture
+Siege *-- Voiture
+
+@enduml

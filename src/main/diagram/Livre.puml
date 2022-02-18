@@ -1,0 +1,10 @@
+@startuml
+
+class Livre {
+- String titre
+- String auteur
+- BigDecimal prix
+- int nombrePage
+}
+
+@enduml

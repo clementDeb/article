@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./demodb;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.query.in_clause_parameter_padding: true
+      hibernate.format_sql: true
+      hibernate.use_sql_comments: false
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+
+server:
+  port: 8090
